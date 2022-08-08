@@ -29,10 +29,6 @@ object main extends App {
   //category String representing the type of category of the transaction
   //transactionAmount A double representing the value of the transaction
 
-  //Question 1
-  //Calculate the total transaction value for all transactions for each day.
-  //The output should contain one line for each day and each line should include the day and the total value
-
    def calculateTotal(day : List[Transaction]):Double= {
       day.foldLeft(0.0)((sum, transaction) =>
         round(sum + transaction.transactionAmount)
